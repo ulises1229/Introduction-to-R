@@ -4,7 +4,7 @@
 ![alt text](https://github.com/ulises1229/INTRO-R-ENESJ/blob/master/figs/r.png)
 
 ## Fecha
-### 17 - 21 de Agosto de 2020 
+### 17 - 21 de enero de 2022 
 
 ## Impartido por:
 <ul>
@@ -22,7 +22,7 @@
 | Día 4      | Gráficas usando la librería ggplot2 | <ul><li> Gráficos de dispersión</li> <li> Estéticas</li> <li> Facetas</li> <li> grids</li> <li> Gráficos de línea</li> <li> Boxplots</li> <li> Transformaciones estadísticas</li> <li> Histogramas </li><li> Más Geometrías</li> <li> Exportación de gráficos</li></ul>| <ol><li>[Presentación](pdf/dia4.pdf)</li><li>[Código](code/dia4.R)</li><li>[Datos.zip](datos/dia4.zip)</li> <li>[mpg.csv](datos/mpg.csv)</li><li>[temp.csv](datos/temp.csv)</li><li>[diamonds.csv](datos/diamonds.csv)</li><li>[covid19.csv](datos/covid19.csv)</li></ol>  | [Día 4](https://youtu.be/y4Xn4s0-hl4)|
 | Día 5      | Modelos de efectos mixtos y aplicaciones | <ul> <li> Efectos fijos vs aleatorios</li> <li> Efectos anidados vs cruzados </li> <li> Selección de modelos</li> <li> Visualización y validación de modelos mixtos</li> </ul> |  <ol><li>[Presentación](pdf/dia5.pdf)</li><li>[Código](code/dia5.R)</li><li>[sleep.csv](datos/sleep.csv)</li><li>[rail.csv](datos/rail.csv)</li></ol>   | [Día 5](https://youtu.be/PCzxFpO936o)|
 
-##### Última actualización: 21 de agosto de 2020
+##### Última actualización: 14 de agosto de 2021
 
 
 GNU GENERAL PUBLIC LICENSE
