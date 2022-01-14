@@ -5,8 +5,8 @@
 ![alt text](https://github.com/ulises1229/INTRO-R-ENESJ/blob/master/figs/header.png)
 ![alt text](https://github.com/ulises1229/INTRO-R-ENESJ/blob/master/figs/r.png)
 
-## Fecha
-### 17 - 21 de enero de 2022 
+## Fecha y hora
+> 17 - 21 de enero de 2022 - 09:00 - 13:00
 
 ## Impartido por:
 <ul>
@@ -15,10 +15,10 @@
 </ul>
 
 ## Modalidad
-Presencial
+> Presencial - Aula 304 - Edificio V - ENES Unidad Juriquilla
 
 ## Requisitos
-Computadora personal con R y RStudio instalado
+> Computadora personal con R y RStudio instalado
 
 ## Temario, materiales y videos
 
