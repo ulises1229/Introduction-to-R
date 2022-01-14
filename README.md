@@ -1,5 +1,7 @@
 # CURSO-TALLER: INTROODUCCIÓN A R
 
+## ENES Unidad Juriquilla
+
 ![alt text](https://github.com/ulises1229/INTRO-R-ENESJ/blob/master/figs/header.png)
 ![alt text](https://github.com/ulises1229/INTRO-R-ENESJ/blob/master/figs/r.png)
 
@@ -11,6 +13,12 @@
   <li> Dr. Alberto Prado Farías</li>
   <li> Dr. Ulises Olivares Pinto</li>
 </ul>
+
+## Modalidad
+Presencial
+
+## Requisitos
+Computadora personal con R y RStudio instalado
 
 ## Temario, materiales y videos
 
