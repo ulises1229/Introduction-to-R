@@ -1,7 +1,7 @@
 rm(list=ls())
 setwd("~/Desktop/Curso R/2021-1")
 
-### Alberto Prado 18 de agosto 2021
+### Alberto Prado 18 de enero 2022
 ### Curso Intersemestral R UNAM ENES J
 ### Estasdistica Descriptiva
 
@@ -106,13 +106,6 @@ library("visualize")
 # Visualizar distribución normal
 visualize.norm(mu = 15.4, sd = 5.2345, stat=25, section="upper")
 
-##################################
-### Ejercicio 6
-# Ajustar distribución log normal
-fitdistr(cars$dist,"lognormal")
-# 2 parámetros log media y log sd
-# Visualizar distribución log normal
-visualize.lnorm(stat=20, meanlog = 3.536,sdlog=0.7686, section = "lower")
 
 ### Estandarización de datos
 ## Ejercicio 7
@@ -129,15 +122,7 @@ fitdistr(cars$dist.estandar,"normal")
 visualize.norm(mu = 1.2583e-16, sd = 9.899e-01, stat=(20-mean(cars$dist))/sd(cars$dist), section="lower")
 
 ############################
-# Ejercicio 8
-# Leer archivo
-lluvia <- read.csv("lluvia.csv")
-# Histograma
-hist(lluvia$mm.lluvia)
-# Ajustar curva con distribución exponencial
-fitdistr(lluvia$mm.lluvia,"exponential")
-# Un solo parametro la tas de cambio
-visualize.exp(theta = 0.9007,  stat=2, section="upper")
+
 
 
 
@@ -219,51 +204,4 @@ abline(a=0,b=0.4987, col="darkgreen", lty=1)
 
 legend(0.5, 25, legend=c("Modelo 1", "Modelo 2"), col=c("red", "darkgreen"), lty=c(2,1), cex=0.5)
 
-
-##################################################
-#### Ejercicio final
-
-
-iris <- read.csv("iris.csv")
-
-##
-boxplot(iris$Petal.Length~iris$Species, col=c("blue","red","purple"), ylab="Petal Length")
-
-##
-setosa <- iris[iris$Species=="setosa",]
-hist(setosa$Petal.Length)
-fitdistr(setosa$Petal.Length,"normal")
-visualize.norm(mu = 1.462, sd = 0.18, stat=5, section="upper")
-
-versicolor <- iris[iris$Species=="versicolor",]
-hist(versicolor$Petal.Length)
-fitdistr(versicolor$Petal.Length,"normal")
-visualize.norm(mu = 4.26, sd = 0.4652, stat=5, section="upper")
-
-virginica <- iris[iris$Species=="virginica",]
-
-## 
-t.test(iris[iris$Species=="versicolor"|iris$Species=="virginica",]$Petal.Length~iris[iris$Species=="versicolor"|iris$Species=="virginica",]$Species)
-
-##
-cor(iris[,2:5])
-
-##
-plot(setosa$Petal.Length~setosa$Petal.Width)
-lm1 <- lm(setosa$Petal.Length~setosa$Petal.Width)
-summary(lm1)
-
-plot(versicolor$Petal.Length~versicolor$Petal.Width)
-lm2 <- lm(versicolor$Petal.Length~versicolor$Petal.Width)
-summary(lm2)
-
-plot(virginica$Petal.Length~virginica$Petal.Width)
-lm3 <- lm(virginica$Petal.Length~virginica$Petal.Width)
-summary(lm3)
-
-plot(iris$Petal.Length~iris$Petal.Width, col=iris$Species, xlab="Largo del pétalo (cm)", ylab="Ancho del pétalo (cm)")
-abline(a=1.327,b=0.547, lty=1)
-abline(a=1.78,b=1.869,col="red", lty=2)
-abline(a=4.24,b=0.65, col="green", lty=4)
-legend(0.1, 7, legend=c("setosa", "versicolor", "virginica"), col=c("black", "red","green"), lty=c(1,2,4), cex=0.5)
 
